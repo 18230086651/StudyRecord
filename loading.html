@@ -12,10 +12,10 @@
 根据这四个状态我们可以通过载入完成后隐藏进度条，而显示内容。
 -->
 <!DOCTYPE HTML>
-<html lang="zh-CN">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>LING•璐の博客 | loading...加载动画</title>
+<title>冰心 | loading...加载动画</title>
 <style type="text/css" media="screen">
 #fountainTextG {
 	z-index: 3;
@@ -185,9 +185,9 @@
 </style>
 <script>
     document.onreadystatechange = function () {
-        var progress = document.getElementById('fountainTextG'); //获取id
-       // console.log(document.readyState);
-        if (document.readyState == "complete"){
+        var progress = document.getElementById('fountainTextG'); //获取id值fountainTextG
+        // console.log(document.readyState);  //控制台打印页面加载返回值
+        if (document.readyState == "complete"){  //判断页面是否加载完成
             progress.style.display = "none";
     }
 }
