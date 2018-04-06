@@ -1,0 +1,210 @@
+<!--
+时间：2018-4-6
+作者：冰心
+加载状态事件
+   document.onreadystatechange 页面加载状态改变时的事件
+   document.readystate 返回页面当前文档的状态
+有四种状态：
+   uninitialized - 还未开始载入
+   loading - 载入中
+   interactive - 已载入，文档与用户开始交互
+   complete - 载入完成
+根据这四个状态我们可以通过载入完成后隐藏进度条，而显示内容。
+-->
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>LING•璐の博客 | loading...加载动画</title>
+<style type="text/css" media="screen">
+#fountainTextG {
+	z-index: 3;
+	width: 200px;
+	margin: 200px auto;
+}
+.fountainTextG {
+	color: #FB777A;
+	opacity: 0.8;
+	font-family: "楷体";
+	font-size: 38px;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	float: left;
+	animation-name: bounce_fountainTextG;
+	-o-animation-name: bounce_fountainTextG;
+	-ms-animation-name: bounce_fountainTextG;
+	-webkit-animation-name: bounce_fountainTextG;
+	-moz-animation-name: bounce_fountainTextG;
+	animation-duration: 1.181s;
+	-o-animation-duration: 1.181s;
+	-ms-animation-duration: 1.181s;
+	-webkit-animation-duration: 1.181s;
+	-moz-animation-duration: 1.181s;
+	animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-direction: normal;
+	-o-animation-direction: normal;
+	-ms-animation-direction: normal;
+	-webkit-animation-direction: normal;
+	-moz-animation-direction: normal;
+	transform: scale(.5);
+	-o-transform: scale(.5);
+	-ms-transform: scale(.5);
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+}
+#fountainTextG_1 {
+	animation-delay: 0.4225s;
+	-o-animation-delay: 0.4225s;
+	-ms-animation-delay: 0.4225s;
+	-webkit-animation-delay: 0.4225s;
+	-moz-animation-delay: 0.4225s;
+}
+#fountainTextG_2 {
+	animation-delay: 0.509s;
+	-o-animation-delay: 0.509s;
+	-ms-animation-delay: 0.509s;
+	-webkit-animation-delay: 0.509s;
+	-moz-animation-delay: 0.509s;
+}
+#fountainTextG_3 {
+	animation-delay: 0.5955s;
+	-o-animation-delay: 0.5955s;
+	-ms-animation-delay: 0.5955s;
+	-webkit-animation-delay: 0.5955s;
+	-moz-animation-delay: 0.5955s;
+}
+#fountainTextG_4 {
+	animation-delay: 0.672s;
+	-o-animation-delay: 0.672s;
+	-ms-animation-delay: 0.672s;
+	-webkit-animation-delay: 0.672s;
+	-moz-animation-delay: 0.672s;
+}
+#fountainTextG_5 {
+	animation-delay: 0.7585s;
+	-o-animation-delay: 0.7585s;
+	-ms-animation-delay: 0.7585s;
+	-webkit-animation-delay: 0.7585s;
+	-moz-animation-delay: 0.7585s;
+}
+#fountainTextG_6 {
+	animation-delay: 0.845s;
+	-o-animation-delay: 0.845s;
+	-ms-animation-delay: 0.845s;
+	-webkit-animation-delay: 0.845s;
+	-moz-animation-delay: 0.845s;
+}
+#fountainTextG_7 {
+	animation-delay: 0.9315s;
+	-o-animation-delay: 0.9315s;
+	-ms-animation-delay: 0.9315s;
+	-webkit-animation-delay: 0.9315s;
+	-moz-animation-delay: 0.9315s;
+}
+#fountainTextG_8 {
+	animation-delay: 1.018s;
+	-o-animation-delay: 1.018s;
+	-ms-animation-delay: 1.018s;
+	-webkit-animation-delay: 1.018s;
+	-moz-animation-delay: 1.018s;
+}
+#fountainTextG_9 {
+	animation-delay: 1.0945s;
+	-o-animation-delay: 1.0945s;
+	-ms-animation-delay: 1.0945s;
+	-webkit-animation-delay: 1.0945s;
+	-moz-animation-delay: 1.0945s;
+}
+#fountainTextG_10 {
+	animation-delay: 1.181s;
+	-o-animation-delay: 1.181s;
+	-ms-animation-delay: 1.181s;
+	-webkit-animation-delay: 1.181s;
+	-moz-animation-delay: 1.181s;
+}
+ @keyframes bounce_fountainTextG {
+ 0% {
+ transform:scale(1);
+ color:#FB777A;
+ opacity:0.8;
+}
+ 100% {
+ transform:scale(.5);
+ color:#FFCB96;
+}
+}
+ @-o-keyframes bounce_fountainTextG {
+ 0% {
+ -o-transform:scale(1);
+ color:#FB777A;
+ opacity:0.8;
+}
+ 100% {
+ -o-transform:scale(.5);
+ color:rgb(255,255,255);
+}
+}
+ @-ms-keyframes bounce_fountainTextG {
+ 0% {
+ -ms-transform:scale(1);
+ color:#FB777A;
+ opacity:0.8;
+}
+ 100% {
+ -ms-transform:scale(.5);
+ color:rgb(255,255,255);
+}
+}
+ @-webkit-keyframes bounce_fountainTextG {
+ 0% {
+ -webkit-transform:scale(1);
+ color:#FB777A;
+ opacity:0.8;
+}
+ 100% {
+ -webkit-transform:scale(.5);
+ color:rgb(255,255,255);
+}
+}
+ @-moz-keyframes bounce_fountainTextG {
+ 0% {
+ -moz-transform:scale(1);
+ color:#FB777A;
+ opacity:0.8;
+}
+ 100% {
+ -moz-transform:scale(.5);
+ color:rgb(255,255,255);
+}
+}
+</style>
+<script>
+    document.onreadystatechange = function () {
+        var progress = document.getElementById('fountainTextG'); //获取id
+       // console.log(document.readyState);
+        if (document.readyState == "complete"){
+            progress.style.display = "none";
+    }
+}
+</script>
+</head>
+<body>
+<div id="fountainTextG">
+  <div id="fountainTextG_1" class="fountainTextG">L</div>
+  <div id="fountainTextG_2" class="fountainTextG">o</div>
+  <div id="fountainTextG_3" class="fountainTextG">a</div>
+  <div id="fountainTextG_4" class="fountainTextG">d</div>
+  <div id="fountainTextG_5" class="fountainTextG">i</div>
+  <div id="fountainTextG_6" class="fountainTextG">n</div>
+  <div id="fountainTextG_7" class="fountainTextG">g</div>
+  <div id="fountainTextG_8" class="fountainTextG">.</div>
+  <div id="fountainTextG_9" class="fountainTextG">.</div>
+  <div id="fountainTextG_10" class="fountainTextG">.</div>
+</div>
+</body>
+</html>
