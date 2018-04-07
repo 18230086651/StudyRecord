@@ -39,17 +39,79 @@ my study timeline.
      
   * 循环执行定时器timestime：
 
-      var times=setInterval(function(){next.onclick();},2500)
+      var times=setInterval(function(){next.onclick();},2500);
   
-  * 获取自定义属性：var myIndex=parseInt(this.getAttribute('index'));
+  * 获取自定义属性：    var myIndex=parseInt(this.getAttribute('index'));
   
-  * 取整函数：var newleft=parseInt(list.style.left)；
-  
-  * 标签a无超链接指向地址时可以这样写：<a href="javascript:;" >文本</a>
-  
+  * 取整函数：    var newleft=parseInt(list.style.left);
   
+  * 标签a无超链接指向地址时可以这样写：    
+  ~~~
+     <a href="javascript:;" >文本</a> 
+  ~~~
   
-  
-  
+## 3．侧框缓冲运动特效（Buffer-movement.html文件）
+
+* opacity不透明属性总结：
+
+    Css3 opacity透明度设置,所有主流浏览器都支持opacity属性。
+
+    IE8和早期版本支持另一种过滤器属性。像：filter:Alpha(opacity=50),早期全兼容写法：
+
+~~~
+    .style {          
+       filter:alpha(opacity=50);          
+       -moz-opacity:0.5;          
+       -khtml-opacity: 0.5;          
+       opacity: 0.5;     
+    } 
+~~~
+
+   从Firefox3.5+不再支持私有属性-moz-opacity,IE9+才开始支持CSS3 opacity，而对IE6-IE8我们习惯使用filter滤镜属性来进行实现。
+
+~~~
+     opacity{
+     　opacity: 0.3;
+       filter:alpha(opacity=30);  //filter 过滤器   兼容IE678
+     }
+~~~
+
+* offsetLeft与style.left的区别
+   
+     offsetLeft 获取的是相对于父对象的左边距, left 获取或设置相对于具有定位属性(position定义为relative)的父对象 的左边距。
+   
+     style.left 返回的是字符串，如28px，offsetLeft返回的是数值28，如果需要对取得的值进行计算，还用offsetLeft比较好。
+   
+* math取值举例:
+
+~~~
+    Math.ceil</a>(2.4));  //3 
+    Math.floor</a>(2.4));  //2
+    Math.round(2.5));   //3
+~~~ 
+   
+* clearInterval()与setTimeout()定时器的区别:
+
+     setInterval()是一种定时器，它按照指定的设置时间（以毫秒计）来调用函数的方法。clearInterval()是结束定时器的循环调用函数。
+     
+     setTimeout()同理也是一种定时器，对应的结束定时的方法是clearTimeout()。与setInterval()不同的是，此定时器只执行一次。
+
+~~~ 
+    举例:
+    
+     var i = 0; //定义一个变量i
+          var t = setInterval(function(){
+            if(i === 60){
+                clearInterval(t);  //假如i是60，则清除此定时器，结束循环回调
+            }else{
+                  i++;
+                  console.log(i);
+                 }
+          },1000);
+          
+          var t = setTimeout(function(){
+              console.log("OK");    //一秒后在控制台输出字符串"OK"
+     },1000);
+~~~
   
   
