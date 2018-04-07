@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>侧框缓冲运动</title>
+<style>
+body{
+    margin: 0px;
+}
+#id1 {
+    height:100px;
+    width: 230px;
+    background: #687f92;
+    bottom: -50px;
+    position: relative;
+    opacity: 0.3;
+    filter: alpha(opacity:30);
+}
+</style>
+<script type="text/javascript">
+    window.onload=function(){
+    var oDiv=document.getElementById('id1');
+    oDiv.onmouseover=function(){
+        startMove(0);
+        }
+    oDiv.onmouseout=function(){
+        startMove(-200);
+        }
+    }
+    var timer=null;
+    function startMove(iTarget){
+        clearInterval(timer);
+        var oDiv=document.getElementById('id1');
+        timer=setInterval(function(){
+            var speed=(iTarget-oDiv.offsetLeft)/10;
+            speed=speed>0?Math.ceil(speed):Math.floor(speed);
+            if(oDiv.offsetLeft==iTarget){
+                clearInterval(timer);
+                }
+                else{
+                   oDiv.style.left=oDiv.offsetLeft+speed+'px';
+                }
+            },30)
+        }
+</script>
+<body>
+<div id="id1">导航栏</div>
+</body>
+</html>
