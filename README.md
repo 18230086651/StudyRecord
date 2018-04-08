@@ -113,5 +113,21 @@ my study timeline.
               console.log("OK");    //一秒后在控制台输出字符串"OK"
      },1000);
 ~~~
-  
-  
+
+## 4．运用js实现透明度变化（opacity.html文件）
+
+*  透明度由0.3到1缓慢变化：
+
+~~~
+ window.onload=function(){
+	   var oDiv=document.getElementById('id1');
+	   oDiv.onmouseover=function(){  //鼠标经过时执行
+	  	startMove1(100);
+	  	}
+	   oDiv.onmouseout=function(){   //鼠标离开时执行
+	  	startMove1(30);
+	  	}
+	}
+~~~
+
+  
