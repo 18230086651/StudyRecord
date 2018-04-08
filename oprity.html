@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>运用js实现透明度变化</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<style>
+body{
+	margin: 0px;
+}
+#id1 {
+    height:100px;
+    width: 230px;
+    background: #687f92;
+    bottom: -50px;
+    position: relative;
+
+    opacity: 0.3;
+    filter: alpha(opacity:30);
+}
+</style>
+<!-- 透明度变化 -->
+ <script type="text/javascript">
+    window.onload=function(){
+	   var oDiv=document.getElementById('id1');
+	   oDiv.onmouseover=function(){
+		  startMove1(100);
+		}
+	   oDiv.onmouseout=function(){
+		startMove1(30);
+		}
+	}
+    var timer=null;
+    var alpha=30;
+	function startMove1(iTarget){
+		var oDiv=document.getElementById('id1');
+		clearInterval(timer);
+		timer=setInterval(function(){
+			var speed=0;
+			if(alpha>iTarget){
+				speed=-10;
+			}
+			else{
+				speed=10;
+			}
+			if(alpha==iTarget){
+				clearInterval(timer);
+			}
+		     else{
+		     	alpha+=speed;
+		     	oDiv.style.filter='alpha(opacity:'+alpha+')';
+		     	oDiv.style.opacity=alpha/100;
+
+		     }
+		},30)
+}
+ </script>
+<body>
+<div id="id1">导航栏</div>
+</body>
+</html>
