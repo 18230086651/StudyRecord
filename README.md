@@ -130,4 +130,17 @@ my study timeline.
 	}
 ~~~
 
-  
+## 5. domReady与window.onloadq区别与认识 （domReady文件夹）
+
+* document.ready和onload的区别——JavaScript文档加载完成事件页面加载完成有两种事件：
+
+  1.ready，表示文档结构已经加载完成（不包含图片等非文字媒体文件）
+
+  2.onload，指示页面包含图片等文件在内的所有元素都加载完成
+
+* window 的 onload 事件是在文档的所有资源都加载完成之后触发，包括 JS、CSS、文档里面的所有的图片，多媒体内容等等， 所以 onload 触发的会比 domReady 慢，比如有一个大图片，页面都已经展现出来了，图片还没加载完成，那么 onload 就不会被触发。（个人认为可以利用window.onload 事件这个可以页面加载的loading）。
+
+* 关于更多关于domR的介绍：http://www.cnblogs.com/JulyZhang/archive/2011/02/12/1952484.html
+
+
+
