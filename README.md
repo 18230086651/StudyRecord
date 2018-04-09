@@ -140,7 +140,7 @@ my study timeline.
 
 * window 的 onload 事件是在文档的所有资源都加载完成之后触发，包括 JS、CSS、文档里面的所有的图片，多媒体内容等等， 所以 onload 触发的会比 domReady 慢，比如有一个大图片，页面都已经展现出来了，图片还没加载完成，那么 onload 就不会被触发。（个人认为可以利用window.onload 事件这个可以页面加载的loading）。
 
-* 关于更多关于domR的介绍：http://www.cnblogs.com/JulyZhang/archive/2011/02/12/1952484.html
+* 关于更多关于domReady的介绍：http://www.cnblogs.com/JulyZhang/archive/2011/02/12/1952484.html
 
 
 
