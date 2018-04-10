@@ -12,7 +12,7 @@
 
 * [运用js实现透明度变化（opacity.html文件）](https://github.com/zlluGitHub/StudyRecord/issues/4)
 
-* [domReady与window.onloadq区别与认识 （domReady文件夹）](https://github.com/zlluGitHub/StudyRecord/issues/5)
+* [domReady与window.onload区别与认识 （domReady文件夹）](https://github.com/zlluGitHub/StudyRecord/issues/5)
  
 
 
