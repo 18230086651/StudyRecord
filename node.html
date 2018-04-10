@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nodeName与nodeValue</title>
+</head>
+<body>
+	<div id="container" class="ss ff">节点测试</div>
+	<script>
+		var divNode = document.getElementById("container");
+
+		if (divNode.nodeType == 1){
+			alert("Node is an element.");
+		}
+
+		console.log(divNode.nodeName + "//" + divNode.nodeValue);
+		var attrNode = divNode.attributes[1];
+		console.log(attrNode.nodeName + "//" + attrNode.nodeValue);
+		var textNode = divNode.childNodes[0];
+		console.log(textNode.nodeName + "//" + textNode.nodeValue);
+		var commentNode = document.body.childNodes[1];
+		console.log(commentNode.nodeName + "//" + commentNode.nodeValue);
+		console.log(document.doctype.nodeName + "//" + document.doctype.nodeValue);
+		var frag = document.createDocumentFragment();
+		console.log(frag.nodeName + "/" + frag.nodeValue);
+		if (divNode.nodeType == 1){
+			alert("Node is an element.");
+		}
+	</script>
+</body>
+</html>
