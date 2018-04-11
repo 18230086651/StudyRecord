@@ -1,0 +1,75 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+
+            #box1{
+                width: 100px;
+                height: 100px;
+                background: seagreen;
+            }
+            #box2{
+                width: 100px;
+                height: 100px;
+            }
+            #box3{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+
+
+        <script>
+    //鼠标经过颜色改变
+    function show1() {
+        var qw =document.getElementById("box1")
+        qw.style.background = "wheat";
+    }
+    function back1() {
+        var qw =document.getElementById("box1")
+        qw.style.background = "pink";
+    }
+
+    //定时器红绿灯
+    var n=setInterval(function(){
+        var dom=document.getElementById('box2');
+        var clr=dom.style.background;
+        if(clr=='red'){
+        	dom.style.background='green';
+        }
+        else{
+          dom.style.background='red';
+      }
+    },500)
+    //定时器红绿黄灯
+    var n=setInterval(function(){
+        qiehuan();
+    },1500)
+
+    var qiehuan=function(){
+    	var dom=document.getElementById('box3');
+    	var clr=dom.style.background;
+    	dom.style.background='yellow';
+    	setTimeout(function(){
+    		if(clr=='red'){
+    			dom.style.background='green';
+    		}
+    		else{
+    			dom.style.background='red'
+    		}
+    	},500);
+    }
+    </script>
+
+    </head>
+    <body>
+        <div onmouseover="show1()" onmouseout="back1()" id="anniu">鼠标移上来试试</div>
+
+        <div id="box1">1</div>
+
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+    </body>
+    </html>
