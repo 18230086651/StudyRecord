@@ -22,13 +22,13 @@
     </ul>
     <script>
      function test(){
-        debugger;
+       // debugger;
        // var test=document.getElementById('test');
         var testLi=document.getElementById('test').getElementsByTagName('li'); //首先拿到ul对象下的li个数
         for(var i=0;i<testLi.length;i++){ //通过遍历li元素确定点击对象
              testLi[i].setAttribute('id',"这是第"+(i+1)+"条"); //为被点击的对象添加新的属性和对应的属性值
              testLi[i].onclick=function(){
-               alert(this.getAttribute('id'));  //输出点击对象输出值
+               alert(this.getAttribute('id'));  //输出点击对象属相值
              }
          }
      };
