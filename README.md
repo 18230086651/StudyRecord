@@ -1,8 +1,10 @@
 # 成长之旅-学习笔记
 
-   在这里记录自己在学习探索过程中遇到的一些比较常见问题和重要的知识点，并将其进行了整理，部分内容可能会有很多欠缺，如发现问题或有更好的建议欢迎fork 之后提交 pr。
+* 在这里记录自己在学习探索过程中遇到的一些比较常见问题和重要的知识点，并将其进行了整理，部分内容可能会有很多欠缺，如发现问题或有更好的建议欢迎fork 之后提交 pr。
 
 ## 笔记目录
+* [登录界面框内验证提示](https://github.com/zlluGitHub/StudyRecord/issues/13)
+
 * [Css cursor鼠标指针、鼠标光标样式总结](https://github.com/zlluGitHub/StudyRecord/issues/12)
 
 * [按键之图片切换（根据改变src属性值原理）](https://github.com/zlluGitHub/StudyRecord/issues/11)
