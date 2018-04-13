@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;">
+<title>登录界面验证提示</title>
+<script>
+  window.onload=function(){
+        var jdian = document.getElementById("rl-name").getElementsByTagName("input");
+        var sm1 = document.getElementById("sm1");
+             sm1.onclick=function(){
+            alert("光标经过登录按钮后是否变成了手型？");
+          }
+            sm1.style.cursor="pointer"; //j将鼠标的样式变成手型
+         for(var i=0;i<jdian.length;i++){ //遍历div下的所有input标签
+           var placeholder=jdian[i].getAttribute("placeholder"); //获得placeholder属性的值
+            // console.log(placeholder);
+            jdian[i].onfocus=function(){ //获取焦点，根据name的值判断获得的是哪一个焦点
+                this.style.outline="none"
+                if(this.placeholder===""||this.placeholder==="请输入登录用户名")
+                   this.placeholder="";
+                if(this.placeholder===""||this.placeholder==="请输入登录密码")
+                   this.placeholder="";
+                }
+            jdian[i].onblur=function(){ //失去焦点，根据name的值判断失去的是哪一个焦点
+                if(this.placeholder===""&&this.name==="userid")
+                   this.placeholder="请输入登录用户名";
+                if(this.placeholder===""&&this.name==="pwd")
+                   this.placeholder="请输入登录密码";
+          }
+
+        }
+  }
+</script>
+</head>
+<body>
+<div id="rl-name">
+    <input type="text" name="userid" placeholder="请输入登录用户名" maxlength="37" >
+    <input type="password" name="pwd"  placeholder="请输入登录密码" maxlength="16" >
+    <input id="sm1" type="button" value="登录" />
+</div>
+</body>
+</html>
