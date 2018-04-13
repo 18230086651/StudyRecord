@@ -3,6 +3,14 @@
    在这里记录自己在学习探索过程中遇到的一些比较常见问题和重要的知识点，并将其进行了整理，部分内容可能会有很多欠缺，如发现问题或有更好的建议欢迎fork 之后提交 pr。
 
 ## 笔记目录
+* [Css cursor鼠标指针、鼠标光标样式总结](https://github.com/zlluGitHub/StudyRecord/issues/12)
+
+* [按键之图片切换（根据改变src属性值原理）](https://github.com/zlluGitHub/StudyRecord/issues/11)
+
+* [元素节点的判断](https://github.com/zlluGitHub/StudyRecord/issues/10)
+
+* [获取事件源的五种方式](https://github.com/zlluGitHub/StudyRecord/issues/9)
+
 * [ul下li元素索引值获取 （traffic-light.html文件)](https://github.com/zlluGitHub/StudyRecord/issues/8)
 
 * [红绿灯变换（定时器应用）（traffic-light.html文件)](https://github.com/zlluGitHub/StudyRecord/issues/7)
