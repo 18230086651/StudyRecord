@@ -1,4 +1,4 @@
-# 成长之旅-学习笔记
+# 成长之旅-学习笔记 （[零散笔记](https://github.com/zlluGitHub/StudyRecord/tree/master/Notebook)）
 
 * 在这里记录自己在学习探索过程中遇到的一些比较常见问题和重要的知识点，并将其进行了整理，部分内容可能会有很多欠缺，如发现问题或有更好的建议欢迎fork 之后提交 pr。
 
