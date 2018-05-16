@@ -2,12 +2,13 @@
 
 ## 移动端小知识点
 * 移动端常用框架
-1. zepto.js 语法与jquery几乎一样，会jquery基本会zepto~ 
+1. zepto.js 语法与jquery几乎一样~ 
 2. iscroll.js 解决页面不支持弹性滚动，不支持fixed引起的问题~ 实现下拉刷新，滑屏，缩放等功能~ 
 3. underscore.js 该库提供了一整套函数式编程的实用功能，但是没有扩展任何JavaScript内置对象。 
 4. fastclick 加快移动端点击响应时间 
 5. animate.css CSS3动画效果库 
 6. Normalize.css Normalize.css是一种现代的、CSS reset为HTML5准备的优质替代方案
+7. MUI接近原生APP体验的高性能前端框架[MUI文档](http://dev.dcloud.net.cn/mui/ui/)
 * 滑屏框架
   适合上下滑屏、左右滑屏等滑屏切换页面的效果 
 slip.js 
