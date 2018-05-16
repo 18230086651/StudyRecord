@@ -1,5 +1,28 @@
 # 成长之旅-零散笔记
-*PHP返回数据集方式
+
+* 移动端小知识点
+~~~
+    /*viewport功能*/
+    1. width：device-width //当前设备宽度
+    2. height
+    3. initial-scale //设置默认缩放比
+    4. user-scalable //设置用户是否允许自行缩放
+    5. maxinum-scale //设置最大缩放比例
+    6. mininum-scale //设置最小缩放比例
+    标准适配方案：<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+----------------------------------------------------------------------------------------
+    //部分css初始化代码
+    *，*：：before，*：：after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    //点击高亮效果清除
+    tap-highlight-color:transparent;
+    -webkit-tap-highlight-color:transparent;
+    }
+~~~
+* PHP返回数据集方式
 ~~~
     1：mysqli_fetch_array(resource result [,int result_type]); $rows['id']或$rows[0]
     2：mysqli_fetch_abject(resource result); $rows=>id
