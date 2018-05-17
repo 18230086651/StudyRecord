@@ -1,6 +1,7 @@
 # 成长之旅-零散笔记
 
 ## 移动端小知识点
+* 字体图标[fontawesome](http://fontawesome.dashgame.com)
 * 图表插件[echarts](http://echarts.baidu.com/index.html)
 * tap和click的区别
   1. 两者都会在点击时触发，但是在web手机端，clikc会有200-300ms的延时，所以要用tap代替click作为点击事件，singleTap和doubleTap分别作为单次点击和双击，但是使用tap会带来点透事件(事件穿透)。
