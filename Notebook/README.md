@@ -15,7 +15,7 @@
 4. fastclick 加快移动端点击响应时间 
 5. animate.css CSS3动画效果库 
 6. Normalize.css Normalize.css是一种现代的、CSS reset为HTML5准备的优质替代方案
-7. MUI接近原生APP体验的高性能前端框架[MUI文档](http://dev.dcloud.net.cn/mui/ui/)
+7. MUI接近原生APP体验的高性能前端框架[MUI文档](http://dev.dcloud.net.cn/mui/ui/)[演示](http://dcloud.io/hellomui/)
 * 滑屏框架
   适合上下滑屏、左右滑屏等滑屏切换页面的效果 
 slip.js 
