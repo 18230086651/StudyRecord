@@ -3,7 +3,8 @@
 ## 移动端小知识点
 * tap和click的区别
   1. 两者都会在点击时触发，但是在web手机端，clikc会有200-300ms的延时，所以要用tap代替click作为点击事件，singleTap和doubleTap分别作为单次点击和双击，但是使用tap会带来点透事件(事件穿透)。
-  2. 原因：首先要知道tap事件是通过监听绑定document上的touch事件来模拟的，并且tap事件是冒泡到document上才触发的；touchstart：在这个dom上用手触摸就能开始click：在这个dom上用手触摸，且手指未曾移动，且在这个dom上手指离开屏幕，且触摸和离开时间很短（有的浏览器可能不检测时间间隔，照样可以触发click），才开始触发。也就是说在移动端的事件触发从早到晚排序：touchstart  touchstop click 。 所以click的触发是有延时的，about 300ms由于我们在touchstart阶段就已经隐藏了A，当click被触发时，能够被点击的就是B。
+
+  2. 原因：首先要知道tap事件是通过监听绑定document上的touch事件来模拟的，并且tap事件是冒泡到document上才触发的；touchstart：在这个dom上用手触摸就能开始click：在这个dom上用手触摸，且手指未曾移动，且在这个dom上手指离开屏幕，且触摸和离开时间很短（有的浏览器可能不检测时间间隔，照样可以触发click），才开始触发。也就是说在移动端的事件触发从早到晚排序：touchstart  touchstop click 。 所以click的触发是有延时的，about 300ms由于我们在touchstart阶段就已经隐藏了A，当click被触发时，能够被点击的就是B。
 
 * 移动端常用框架
 1. zepto.js 语法与jquery几乎一样~ 
