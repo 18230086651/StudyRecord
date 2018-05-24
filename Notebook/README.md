@@ -1,6 +1,18 @@
 # 成长之旅-零散笔记
 
 ## 移动端小知识点
+* 用正则替换冒个字符
+~~~
+  var a = 'abc;def;hij;';
+  a = a.replace(/;/g,',');
+  结果：abc,def,hij,
+~~~
+* 将字符串拆分成数组形式
+~~~
+  var data='a-b';
+  data.split('-');
+  结果：[a,b]
+~~~
 * 字体图标[fontawesome](http://fontawesome.dashgame.com)
 * 图表插件[echarts](http://echarts.baidu.com/index.html)
 * tap和click的区别
