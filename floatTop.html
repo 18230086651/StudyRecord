@@ -1,0 +1,73 @@
+~~~
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+    .bodys{
+        width:200px;
+        height:3000px;
+    }
+        #page{
+            width:80px;
+            height:1020px;
+            margin:12px;
+            background-color:#666;
+        }
+        #sdf{
+
+            width:120px;
+            height:120px;
+            background-color:red;
+        }
+        .q{
+            position:fixed;
+            top:0;
+            left:0;
+        }
+    </style>
+
+    <script>
+    window.onload=function(){
+        var page = document.getElementById('page');
+        var sdf = document.getElementById("sdf");
+        var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+        window.onscroll = function(){
+            var pageHeight = page.offsetHeight;
+            if (scrollTop >= pageHeight) {
+                sdf.className = 'q';
+            }else{
+                sdf.className = '';
+            };
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+<div class="bodys">
+
+
+    <div id="page">
+        qwwefew</br>
+        qwwefew</br>
+        qwwefew</br>
+        qwwefew</br>
+        qwwefew</br>
+        qwwefew</br>
+
+        qwwefew</br>
+        qwwefew</br>
+
+    </div>
+    <div id="sdf">
+
+    </div>
+</div>
+</body>
+
+</html>
+~~~
