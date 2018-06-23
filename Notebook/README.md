@@ -1,4 +1,29 @@
 # 成长之旅-零散笔记
+### 2018.6.23
+
+* background-size 属性规定背景图片的尺寸。
+* background-origin 属性规定背景图片的定位区域。
+* background-clip 背景绘制区域
+    - center-box
+    - padding-box
+    - border-box
+* border-color: transparent; 颜色透明
+
+* 引入字体，将字体导入到本地
+ ```
+ @font-face{
+      font-family:haha;
+      src:url('font/BebasNeue-webfont.eot'),
+          url('font/BebasNeue-webfont.svg'),
+          url('font/BebasNeue-webfont.ttf'),
+          url('font/BebasNeue-webfont.woff');
+    }
+    .fonts{
+        font-family:haha;
+        font-size:18px;
+    } 
+```
+    
 ## 移动端小知识点
 * 点击高亮效果
 在移动端浏览器会遇见点击出现高亮的效果，在某项项目是不需要这个默认的效果的。那么我们通常会把这个点击的颜色设置成透明。
