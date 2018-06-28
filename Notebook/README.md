@@ -1,5 +1,5 @@
 # 成长之旅-零散笔记
-### 2018.6.23
+### 背景属性
 
 * background-size 属性规定背景图片的尺寸。
 * background-origin 属性规定背景图片的定位区域。
@@ -8,7 +8,20 @@
     - padding-box
     - border-box
 * border-color: transparent; 颜色透明
+* 清除浮动
+~~~
+    .clearfix:after {
+        display: block;
+        clear: both;
+        content: "";
+        visibility: hidden;
+        height: 0;
+    }
 
+    .clearfix {
+        zoom: 1;
+    }
+~~~
 * 引入字体，将字体导入到本地
  ```
  @font-face{
