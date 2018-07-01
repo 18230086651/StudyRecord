@@ -1,4 +1,29 @@
 # 成长之旅-零散笔记
+### 纯css border向上三角形
+~~~
+.triangle_border_up{
+    width:0;
+    height:0;
+    border-width:0 30px 30px;
+    border-style:solid;
+    border-color:transparent transparent #333;/*透明 透明  灰*/
+    margin:40px auto;
+    position:relative;
+}
+.triangle_border_up span{
+    display:block;
+    width:0;
+    height:0;
+    border-width:0 28px 28px;
+    border-style:solid;
+    border-color:transparent transparent #fc0;/*透明 透明  黄*/
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+~~~
+* [纯CSS写三角形-border法](https://www.cnblogs.com/blosaa/p/3823695.html) 
+
 ### 背景属性
 
 * background-size 属性规定背景图片的尺寸。
