@@ -1,4 +1,12 @@
 # 成长之旅-零散笔记
+### mouseover事件与mouseout事件的区别  mouseenter事件与mouseleave事件的区别
+
+    1.不论鼠标指针穿过被选元素或其子元素，都会触发 mouseover 事件。对应mouseout
+    
+    2.只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件。对应mouseleave
+    
+    3.这样的话，mouseenter子元素不会反复触发事件，否则在IE中经常有闪烁情况发生。
+    
 ### 纯css border向上三角形
 ~~~
 .triangle_border_up{
