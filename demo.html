@@ -1,3 +1,116 @@
+
+<!-- jQuery实现扇形动画轮播 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.pic{
+			width: 1000px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			height: 306px;
+		}
+		.pic>div{
+			width: 600px;
+			background-color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: left 1s;
+		}
+		.pic>div:nth-child(2){
+			left: 200px;
+		}
+		.pic>div:nth-child(3){
+			left: 400px;
+		}
+		.pic>div:nth-child(4){
+			left: 600px;
+		}
+		.pic>div:nth-child(5){
+			left: 800px;
+		}
+		.pic>div>img{
+			width: 100%;
+		}
+		.pic div .wrap{
+			position: absolute;
+			top: 0;
+			height: 306px;
+			width: 100%;
+			background-color: rgba(0,0,0,0.4);
+		}
+		.pic>div .show{
+			background-color: rgba(0,0,0,0);
+		}
+	</style>
+</head>
+<body>
+	<div class="pic">
+		<div>
+			<div class="wrap"></div>
+			<img src="images/slide-1.jpg" alt="">
+		</div>
+		<div>
+			<div class="wrap"></div>
+			<img src="images/slide-2.jpg" alt="">
+		</div>
+		<div>
+			<div class="wrap"></div>
+			<img src="images/slide-3.jpg" alt="">
+		</div>
+		<div>
+			<div class="wrap"></div>
+			<img src="images/slide-4.jpg" alt="">
+		</div>
+		<div>
+			<div class="wrap"></div>
+			<img src="images/slide-5.jpg" alt="">
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var  picwidth = $('.pic').width();
+		// console.log(picwidth);
+		var  imgwidth = $('.pic>div').width();
+		// console.log(imgwidth);
+		var imgnum = $('.pic img').length;
+		$('.pic>div').mouseenter(function(event) {
+			var index = $(this).index();
+			// console.log(index);
+			var leftwidth = (picwidth - imgwidth)/(imgnum-1);
+			// console.log(leftwidth);
+			for (var i = 0; i < imgnum; i++) {
+				if (i<=index) {
+					$('.pic>div').eq(i).css('left', i*leftwidth+'px');
+				}else{
+					$('.pic>div').eq(i).css('left', (i-1)*leftwidth+imgwidth+'px');
+				}
+			};
+		});
+		// 鼠标离开后触发
+		$('.pic').mouseleave(function(event) {
+			// alert("message")
+			var leftwidth = picwidth/imgnum;
+			for (var i = 0; i < imgnum; i++) {
+				$('.pic>div').eq(i).css('left', i*leftwidth+'px');
+			};
+		});
+
+	</script>
+</body>
+</html>
+
+
+//原生
+
 <!doctype html>
 <html lang="en">
 <head>
