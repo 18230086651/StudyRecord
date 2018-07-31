@@ -1,0 +1,57 @@
+{
+    "shoppingCart": [{
+            "id": "1",
+            "shoppingName": "A家家居旗舰店",
+            "goodsList": [{
+                    "id": "11",
+                    "shopPicimg": "img/5b0ca8b6N7e098fb5.jpg",
+                    "title": "A家 餐桌 可折叠伸餐桌缩实木脚餐桌钢化玻璃餐桌椅组合",
+                    "goodsColor": "米黄色",
+                    "goodsType": "一桌四椅",
+                    "unitPrice": "￥1999.00",
+                    "goodsCount": "1"
+                },
+                {
+                    "id": "12",
+                    "shopPicimg": "img/5b5a82dfN519557d6.jpg",
+                    "title": "A家 床 真皮床双人床皮床现代简约卧室家具组合头层牛皮软靠床",
+                    "goodsColor": "馨米色",
+                    "goodsType": "1.8*2.0米",
+                    "unitPrice": "￥2399.00",
+                    "goodsCount": "1"
+                },
+                {
+                    "id": "13",
+                    "shopPicimg": "img/595f5352N3282ff8e.jpg",
+                    "title": "A家 床 真皮床双人床皮床现代简约卧室家具组合头层牛皮软靠床",
+                    "goodsColor": "馨米色",
+                    "goodsType": "1.8*2.0米",
+                    "unitPrice": "￥2399.00",
+                    "goodsCount": "1"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "shoppingName": "京东自营",
+            "goodsList": [{
+                    "id": "21",
+                    "shopPicimg": "img/5b5541adN7278fb92.jpg",
+                    "title": "联想(Lenovo)小新潮7000 2018款 14英寸轻薄笔记本电脑(I5-8250U 8G",
+                    "goodsColor": "14英寸 【i5 8G...",
+                    "unitPrice": "￥5099.00",
+                    "goodsCount": "1"
+                },
+                {
+                    "id": "22",
+                    "shopPicimg": "img/5b5a82e1Nb47f8db1.jpg",
+                    "title": "联想(Lenovo)拯救者R720 15.6英寸大屏游戏笔记本电脑(i5-7300HQ 8G",
+                    "goodsColor": "【i5 荣誉勋章...",
+                    "unitPrice": "￥5499.00",
+                    "goodsCount": "1"
+                }
+
+            ]
+        }
+    ]
+}

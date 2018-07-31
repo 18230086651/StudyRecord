@@ -1,0 +1,396 @@
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.g-centre {
+    font-family: "Microsoft YaHei", SimSun, verdana;
+    font-size: 12px;
+    width: 990px;
+    line-height: 20px;
+    color: #999;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.g-content {
+    margin-bottom: 25px;
+}
+
+.g-top {
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0 10px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+    position: relative;
+}
+
+.g-top>div {
+    float: left;
+}
+
+.g-all {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.g-sp {
+    margin-right: 420px;
+}
+
+.g-price {
+    margin-right: 82px;
+}
+
+.g-num {
+    margin-right: 92px;
+}
+
+.g-count {
+    margin-right: 82px;
+}
+
+.g-operate {
+    margin-right: 12px;
+}
+
+.shop {
+    height: 30px;
+    /* line-height: 30px; */
+    padding-left: 11px;
+    font-weight: 700;
+}
+
+.shop a {
+    /* width: 54px; */
+    height: 18px;
+    /* background: url(img/cart-icons-201805.png) 0 -177px no-repeat; */
+    overflow: hidden;
+    display: inline-block;
+    color: #000;
+}
+
+.item {
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    _border-width: 1px;
+    border-color: #aaa #f1f1f1 #f1f1f1;
+}
+
+.actives {
+    background-color: #fff4e8;
+}
+
+.item-top {
+    position: relative;
+    padding: 5px 10px;
+    background: #fff;
+    line-height: 26px;
+    height: 26px;
+}
+
+.item-top span {
+    background: #fff;
+    color: #f48719;
+    border: 1px solid #f48719;
+    display: inline-block;
+    padding: 1px 10px;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    margin: 0 10px 0 5px;
+}
+
+.item-top b {
+    width: 5px;
+    height: 6px;
+    left: 15px;
+    border: 0;
+    bottom: 4px;
+    background: url(img/cart-line-02.png) 0 -7px no-repeat;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+}
+
+.item-top a {
+    color: #e4393c;
+}
+
+.item-list {
+    color: #666;
+    padding: 0 0 1px 0px;
+    border-top: 1px solid #e9e9e9;
+    position: relative;
+    padding-top: 12px;
+    margin-left: 40px;
+}
+
+.item-list>div {
+    float: left;
+}
+
+.list-checkbox {
+    top: 20px;
+    left: -33px;
+    position: absolute;
+}
+
+.list-line {
+    position: absolute;
+    z-index: -2;
+    left: -24px;
+    top: 0;
+    width: 2px;
+    height: 130%;
+    background: url('img/cart-line-02.png') -9px 0 repeat-y;
+}
+
+.list-img {
+    margin-right: 12px;
+}
+
+.list-title {
+    width: 215px;
+    margin-right: 30px;
+}
+
+.list-title a {
+    color: #333;
+}
+
+.list-title a:hover {
+    color: #e4393c;
+}
+
+.list-title a em {
+    height: 20px;
+    width: 57px;
+    display: inline-block;
+    width: 57px;
+    height: 20px;
+    background: url('img/selection-icon.png') no-repeat;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-right: 3px;
+}
+
+.list-title span {
+    display: block;
+}
+
+.list-title span i {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url('img/cart-icons-201805.png') no-repeat;
+    background-position: -54px -23px;
+}
+
+.list-title span a {
+    padding: 1px 4px 0 7px;
+    height: 16px;
+    color: #6485cb;
+    line-height: 16px;
+}
+
+.list-text {
+    width: 130px;
+    margin-right: 30px;
+}
+
+.list-text p {
+    margin: 0px;
+}
+
+.list-price {
+    width: 80px;
+    margin-right: 35px;
+}
+
+.list-price strong {
+    color: #333;
+    font-weight: 400;
+    float: right;
+    margin-left: 45px;
+}
+
+.list-price a {
+    float: right;
+    color: #e4393c;
+    display: block;
+    margin: 2px 0px;
+    padding: 1px 4px;
+    border: 1px solid #f9d2d3;
+}
+
+.list-input {
+    margin-right: 42px;
+}
+
+.list-input a {
+    color: #333;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 0;
+    width: 16px;
+    text-align: center;
+    display: block;
+    border: 1px solid #cacbcb;
+}
+
+.list-input a:nth-child(1) {
+    border-right: none;
+}
+
+.list-input a:nth-child(3) {
+    border-left: none;
+}
+
+.list-input input {
+    /* background-color: rgba(14, 14, 14, 0.0); */
+    background-color: transparent;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    width: 42px;
+    height: 18px;
+    border: 1px solid #cacbcb;
+}
+
+.list-all-price {
+    /* width: 100px; */
+    margin-right: 32px;
+    font-weight: lighter;
+    color: #000;
+}
+
+.item-list .list-other {
+    margin-right: 20px;
+    float: right;
+    width: 92px;
+}
+
+.list-other a {
+    color: #666;
+    display: block;
+    float: right;
+}
+
+.list-other a:hover {
+    color: #e4393c;
+}
+
+.item-bottom {
+    color: #333;
+    padding-bottom: 10px;
+    margin-left: 40px;
+}
+
+.item-bottom span {
+    width: 38px;
+    height: 14px;
+    background: url('img/cart-icons-201805.png') 0 -342px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.item-bottom a {
+    color: #333;
+    margin-left: 20px;
+}
+
+.g-bottom {
+    color: #666;
+    width: 990px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #f0f0f0;
+}
+
+.g-bottom-left {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 16px 0 16px 9px;
+    white-space: nowrap;
+}
+
+.g-bottom-left>span {
+    float: left;
+}
+
+.g-bottom-left>a {
+    margin-left: 10px;
+    color: #666;
+}
+
+.g-bottom-right {
+    color: #999;
+    float: right;
+}
+
+.g-bottom-right>div {
+    float: left;
+}
+
+.g-bottom-num {
+    padding-right: 25px;
+}
+
+.g-bottom-num span {
+    color: #e4393c;
+    display: inline-block;
+    padding: 0px 2px;
+}
+
+.bottom-all-price {
+    padding-top: 5px;
+    margin-left: 25px;
+}
+
+.g-bottom-price {
+    margin-right: 45px;
+}
+
+.bottom-all-price strong {
+    font-size: 14px;
+    color: #e4393c;
+    font-weight: bold;
+}
+
+.bottom-js {
+    margin-right: 28px;
+}
+
+.g-bottom-go a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    width: 92px;
+    height: 50px;
+    background-color: #e4393c;
+    color: #fff;
+}
+
+.g-bottom-left a:hover {
+    color: #e4393c;
+}
