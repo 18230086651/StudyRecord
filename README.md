@@ -3,6 +3,7 @@
 * 在这里记录自己在学习探索过程中遇到的一些比较常见问题和重要的知识点，并将其进行了整理，部分内容可能会有很多欠缺，如发现问题或有更好的建议欢迎fork 之后提交 pr。
 
 ## 笔记目录
+* [邮箱注册dom](https://github.com/zlluGitHub/StudyRecord/tree/master/Mailbox)
 * [jQuery仿京东购物车](https://github.com/zlluGitHub/StudyRecord/tree/master/cart)
 * [简单的吸顶效果](https://github.com/zlluGitHub/StudyRecord/blob/master/floatTop.html)
 * [登录界面框内验证提示](https://github.com/zlluGitHub/StudyRecord/issues/13)
