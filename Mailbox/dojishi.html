@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        div{
+            width:200px;
+            height:100px;
+        }
+        div span:nth-child(1){
+
+        }
+    </style>
+</head>
+    <div>
+        <span></span>:
+        <span></span>:
+        <span></span>
+    </div>
+<body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var targetHoursTime = 21;
+    var targetMinutesTime = 24;
+    var targetSecondsTime = 59;
+    var Time = setInterval(Timekeeping,1000);
+    function  Timekeeping(){
+        var date = new Date();
+        var nowHoursTime = date.getHours();
+        var nowMinutesTime = date.getMinutes();
+        var nowSecondsTime = date.getSeconds();
+        var getHoursTime = targetHoursTime - nowHoursTime;
+        var getMinutesTime = targetMinutesTime - nowMinutesTime;
+        var getSecondsTime = targetSecondsTime - nowSecondsTime;
+        if (getHoursTime === 0 && getMinutesTime === -1 && getSecondsTime === 59) {
+            $('div').html('时间到！');
+            clearInterval(Time);
+        };
+        if(getHoursTime < 10){
+            $('span:nth-child(1)').text(`${'0'+getHoursTime}`);
+        }else{
+            $('span:nth-child(1)').text(getHoursTime);
+        };
+        if(getMinutesTime < 10){
+            $('span:nth-child(2)').text(`${'0'+getMinutesTime}`);
+        }else{
+             $('span:nth-child(2)').text(getMinutesTime);
+        };
+        if(getSecondsTime < 10){
+            $('span:nth-child(3)').text(`${'0'+getSecondsTime}`);
+        }else{
+            $('span:nth-child(3)').text(getSecondsTime);
+        };
+    };
+</script>
+</body>
+</html>
