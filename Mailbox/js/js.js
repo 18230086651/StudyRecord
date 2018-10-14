@@ -7,37 +7,37 @@
 
 // 邮箱地址检验
 $('.email-ipt').blur(function() {
-    var regexp = /^([A-Z]|[a-z])([A-z]|[0-9])/;
-    var string = $(this).val();
-    var result = regexp.exec(string);
-    var stringLength = string.length;
-    if (stringLength <= 18 && stringLength >= 6) {
-        $('.email-prompt').text('恭喜，该邮件地址可注册').removeClass('active-nametips-err').addClass('active-nametips-true');
-    } else {
-        $('.email-prompt').text('长度应为6~18个字符').removeClass('active-nametips-true').addClass('active-nametips-err');
-    };
-})
-// 密码输入
+        var regexp = /^([A-Z]|[a-z])([A-z]|[0-9])/;
+        var string = $(this).val();
+        var result = regexp.exec(string);
+        var stringLength = string.length;
+        if (stringLength <= 18 && stringLength >= 6) {
+            $('.email-prompt').text('恭喜，该邮件地址可注册').removeClass('active-nametips-err').addClass('active-nametips-true');
+        } else {
+            $('.email-prompt').text('长度应为6~18个字符').removeClass('active-nametips-true').addClass('active-nametips-err');
+        };
+    })
+    // 密码输入
 $('.password-ipt').blur(function() {
 
     var string = $(this).val();
     var stringLength = string.length;
     if (stringLength >= 16 || stringLength <= 6) {
         $('.password-prompt').text('请输入6~16个字符').removeClass('active-nametips-true').addClass('active-nametips-err');
-    } else if(test(string)){
+    } else if (test(string)) {
         $('.password-prompt').text('密码强度：弱').removeClass('active-nametips-err').addClass('active-nametips-true');
-    }else{
+    } else {
         $('.password-prompt').text('密码强度：中').removeClass('active-nametips-err').addClass('active-nametips-true');
     };
 })
 
 //递增数列的判断
-function test(str){
+function test(str) {
     var Str = str.split('');
     var bool = true;
-    for (var i = 0; i < Str.length-1; i++) {
-        if (Str[i]-Str[i+1] !== -1) {
-           bool = false;
+    for (var i = 0; i < Str.length - 1; i++) {
+        if (Str[i] - Str[i + 1] !== -1) {
+            bool = false;
         };
     };
     return bool;
@@ -100,3 +100,10 @@ $('.phone-auth-code-ipt').blur(function() {
         $('.phone-auth-code-tips').text('请填写填写正确验证码！').removeClass('active-nametips-true').addClass('active-nametips-err');
     };
 });
+
+$('.title').click(function() {
+    alert('此功能尚未开发！')
+})
+$('.logon').click(function() {
+    alert('信息有误，请写正确填写！')
+})
